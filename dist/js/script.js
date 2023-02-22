@@ -2306,10 +2306,55 @@ module.exports = g;
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/burger */ "./src/js/modules/burger.js");
 /* harmony import */ var _modules_scrolling__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/scrolling */ "./src/js/modules/scrolling.js");
+/* harmony import */ var _modules_pushCart__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/pushCart */ "./src/js/modules/pushCart.js");
+/* harmony import */ var _modules_showCard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/showCard */ "./src/js/modules/showCard.js");
+
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
+  var heroSwiper = new Swiper('.hero__swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
+  });
+  var actorsSwiper = new Swiper('.actors-swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    spaceBetween: 40,
+    slidesPerView: 5
+  });
+  var newsSwiper = new Swiper('.news-link-swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    spaceBetween: 40,
+    slidesPerView: 3
+  });
   Object(_modules_scrolling__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  Object(_modules_pushCart__WEBPACK_IMPORTED_MODULE_2__["default"])();
+  Object(_modules_showCard__WEBPACK_IMPORTED_MODULE_3__["default"])(".poster__more-btn");
 });
 
 /***/ }),
@@ -2341,6 +2386,40 @@ var burger = function burger(menuSelector, burgerSelector) {
   });
 };
 /* harmony default export */ __webpack_exports__["default"] = (burger);
+
+/***/ }),
+
+/***/ "./src/js/modules/pushCart.js":
+/*!************************************!*\
+  !*** ./src/js/modules/pushCart.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.for-each.js */ "./node_modules/core-js/modules/es.array.for-each.js");
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+var pushCard = function pushCard() {
+  var pushkins = document.querySelectorAll(".poster__push"),
+    pushkinsText = document.querySelectorAll(".poster__img-text");
+  pushkins.forEach(function (item, i) {
+    item.addEventListener("mouseover", function () {
+      pushkinsText[i].classList.add("poster__img-text__active");
+    });
+    item.addEventListener("mouseout", function () {
+      pushkinsText[i].classList.remove("poster__img-text__active");
+    });
+  });
+};
+/* harmony default export */ __webpack_exports__["default"] = (pushCard);
 
 /***/ }),
 
@@ -2377,8 +2456,8 @@ var scrolling = function scrolling() {
   // Scrolling with raf
 
   var links = document.querySelectorAll('[href^="#"]'),
-    speed = 1;
-  links.forEach(function (link) {
+    speed = 0.3;
+  links.forEach(function (link, i) {
     link.addEventListener('click', function (event) {
       event.preventDefault();
       var widthTop = document.documentElement.scrollTop,
@@ -2460,6 +2539,40 @@ var scrolling = function scrolling() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (scrolling);
+
+/***/ }),
+
+/***/ "./src/js/modules/showCard.js":
+/*!************************************!*\
+  !*** ./src/js/modules/showCard.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.for-each.js */ "./node_modules/core-js/modules/es.array.for-each.js");
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+var showCard = function showCard(selector) {
+  var btn = document.querySelector(selector),
+    cards = document.querySelectorAll(".poster__disable");
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    btn.remove();
+    cards.forEach(function (card) {
+      card.classList.add("fade-in");
+      card.style.cssText = "\n                transition: all 0.3s;\n                display: block;\n                opacity: 1;\n            ";
+    });
+  });
+};
+/* harmony default export */ __webpack_exports__["default"] = (showCard);
 
 /***/ })
 

@@ -1,0 +1,128 @@
+.footer{
+    padding: 60px 0 40px 0;
+    background-color: $r;
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+    &__title{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: $wh;
+        margin-bottom: 30px;
+    }
+    &__menu{
+        max-width: 205px;
+        width: 100%;
+    }
+    &__item{
+        a {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $wh;
+        }
+        &:not(:last-child){
+            margin-bottom: 15px;
+        }
+    }
+    &__contacts{
+        max-width: 268px;
+        width: 100%;
+    }
+    &__block{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+       &:not(:last-child){
+        margin-bottom: 20px;
+       }
+    }
+    &__icon{
+        max-width: 18px;
+        svg{
+            width: 18px;
+            max-height: 24px;
+            fill: $wh;
+        }
+    }
+
+    &__link{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: $wh;
+        &:not(:last-child){
+            margin-bottom: 5px;
+        }
+        &_400, a{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $wh;
+        }
+    }
+
+    &__partners{
+        max-width: 320px;
+        width: 100%;
+        &_img{
+            border-radius: 10px;
+            a{
+                display: block;
+                width: 100%;
+            }
+            &:nth-child(-n+2){
+                margin-bottom: 20px;
+            }
+        }
+        &_wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 320px;
+            width: 100%;
+        }
+    }
+
+    &__social{
+        max-width: 130px;
+        &_icon{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a{
+                display: block;
+                width: 30px;
+                height: 30px;
+            }
+            svg{
+                width: 30px;
+                height: 30px;
+                fill: $wh;
+            }
+        }
+    }
+    &__author{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: $wh;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

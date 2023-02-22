@@ -3,5 +3,18 @@
 
 
 //Шрифты, переменные
-@import "variable/variable";
 @import "fonts";
+@import "variable/variable";
+@import "variable/mixin";
+@import "variable/hover";
+
+//Одниковые блоки на страницах
+@import "blocks/header";
+@import "blocks/footer";
+
+
+//Стили страниц
+@import "page/main/main";
+@import "page/main/main-media";
+
+@import "page/actors/actors";

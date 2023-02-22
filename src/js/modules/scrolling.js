@@ -14,11 +14,13 @@ const scrolling = () => {
     // Scrolling with raf
 
     let links = document.querySelectorAll('[href^="#"]'),
-        speed = 1;
+        speed = 0.3;
     
-    links.forEach(link => {
+    links.forEach((link,i) => {
         link.addEventListener('click', function(event) {
             event.preventDefault();
+            
+            
 
             let widthTop = document.documentElement.scrollTop,
                 hash = this.hash,

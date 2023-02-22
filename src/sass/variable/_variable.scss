@@ -1,3 +1,7 @@
+$wh: #fff;
+$r: #330000;
+$bl: #242424;
+
 *{
     box-sizing: border-box;
 }
@@ -6,8 +10,57 @@ html{
 }
 body{
     position: relative;
+    background-color: #EFDABC;
 }
-h1,h2,h3,p,ul,li{
+h1,h2,h3,p,ul,li,a{
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.main_title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: $wh;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+.title-bl{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 47px;
+    color: $bl;
+    margin-bottom: 6rem;
+}
+
+.title-wh{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 47px;
+    color: $wh;
+    margin-bottom: 6rem;
+}
+
+.fade-in {
+    animation: fadeIn ease 2s;
+  }
+  
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
 }

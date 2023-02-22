@@ -17,7 +17,13 @@
   },
   "homepage": "https://github.com/sayktiger/Uber#readme",
   "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
     "browser-sync": "^2.27.7",
+    "core-js": "^3.4.2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
@@ -31,16 +37,11 @@
     "gulp-webp": "^4.0.1",
     "node-sass": "^7.0.1",
     "sass": "^1.49.9",
-    "@babel/core": "^7.7.4",
-    "@babel/preset-env": "^7.7.4",
-    "babel": "^6.23.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.6",
-    "core-js": "^3.4.2",
     "webpack": "^4.41.2",
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
-    "imagemin-webp": "^5.1.0"
+    "imagemin-webp": "^5.1.0",
+    "swiper": "^9.0.5"
   }
 }

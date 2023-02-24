@@ -52,6 +52,49 @@ document.addEventListener(`DOMContentLoaded`, () => {
         slidesPerView: 3,
       });
 
+      const newsAllSwiper = new Swiper('.news-all__swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          type: 'fraction',
+          
+          
+        },
+        
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        spaceBetween: 40,
+        slidesPerView: 1,
+      });
+
+
+      const performanceAllSwiper = new Swiper('.performances-all__swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          type: 'fraction',
+          
+          
+        },
+        
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        spaceBetween: 40,
+        slidesPerView: 1,
+      });
+
 
 
       scrolling();

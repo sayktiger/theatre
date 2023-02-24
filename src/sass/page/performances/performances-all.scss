@@ -1,0 +1,208 @@
+.performances-all{
+    padding: 40px 0 120px 0;
+    .container{
+        overflow: hidden;
+    }
+    &__nav-slider{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 150px;
+        margin: 0 auto;
+    }
+    &__swiper{
+        overflow: hidden;
+        max-height: 1475px;
+        .swiper-wrapper{
+            margin-bottom: 60px;
+        }
+        .swiper-pagination{
+            position: relative;
+        }
+        .swiper-button-prev, .swiper-button-next{
+            position: relative;
+            &::after{
+                display: none;
+            }
+            svg{
+                width: 12px;
+                height: 12px;
+                fill:#242424;
+            }
+        }
+    }
+    &__block{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-height: 320px;
+        background-color: $r;
+        border-radius: 10px;
+        &:not(:last-child){
+            margin-bottom: 40px;
+        }
+    }
+    
+    &__img{
+        max-width: 440px;
+        width: 100%;
+        position: relative;
+        .poster-premier{
+            position: absolute;
+            max-width: 87px;
+            padding: 5px 10px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 16px;
+            background: $wh;
+            border-radius: 5px;
+            color: $bl;
+            top: 20px;
+            right: 20px;
+        }
+        img{
+            width: 440px;
+        }
+    }
+    &__text{
+        padding: 20px;
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    &__title{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: $wh;
+        margin-bottom: 5px;
+        position: relative;
+        span{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $wh;
+            position: absolute;
+            top: 0;
+            right: -29px;
+        }
+    }
+    &__subtitle{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: $wh;
+        margin-bottom: 20px;
+    }
+    &__descr{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $wh;
+        margin-bottom: 29px;
+        min-height: 133px;
+    }
+    &__bot{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 265px;
+            width: 100%;
+        }
+    }
+
+    &__date{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: $wh;
+    }
+
+    &__price{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        color: $wh;
+    }
+
+    &__btn{
+        max-width: 280px;
+    }
+    &__info{
+        margin-top: 120px;
+        margin-bottom: 70px;
+        &_title{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            color: $bl;
+            margin-bottom: 30px;
+        }
+        &_subtitle{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: $bl;
+        }
+        &_info{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $bl;
+        }
+        &_link{
+            display: block;
+            margin-top: 30px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: $bl;
+        }
+    }
+    &__refund_title{
+        margin-bottom: 10px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        color: $bl;
+    }
+    &__item{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $bl;
+        margin-bottom: 5px;
+    }
+}

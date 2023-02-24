@@ -1,0 +1,45 @@
+.about-del{
+    padding: 40px 0 120px 0;
+    &__wrapper{
+        .about-del__descr{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $bl;
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__img{
+        margin-top: 40px;
+        margin-bottom: 50px;
+        width: 100%;
+        border-radius: 10px;
+        &-descr{
+            text-align: center;
+            margin-top: 20px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #6F6F6F;
+        }
+    }
+    &__premier{
+        &-img{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 120px;
+            padding-top: 20px;
+        }
+        img{
+            max-width: 680px;
+        }
+    }
+}

@@ -2352,6 +2352,40 @@ document.addEventListener("DOMContentLoaded", function () {
     spaceBetween: 40,
     slidesPerView: 3
   });
+  var newsAllSwiper = new Swiper('.news-all__swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      type: 'fraction'
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    spaceBetween: 40,
+    slidesPerView: 1
+  });
+  var performanceAllSwiper = new Swiper('.performances-all__swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      type: 'fraction'
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    spaceBetween: 40,
+    slidesPerView: 1
+  });
   Object(_modules_scrolling__WEBPACK_IMPORTED_MODULE_1__["default"])();
   Object(_modules_pushCart__WEBPACK_IMPORTED_MODULE_2__["default"])();
   Object(_modules_showCard__WEBPACK_IMPORTED_MODULE_3__["default"])(".poster__more-btn");

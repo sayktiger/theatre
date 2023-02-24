@@ -64,3 +64,25 @@ img{
     0% {opacity:0;}
     100% {opacity:1;}
 }
+
+.link-page{
+    display: flex;
+    align-items: center;
+    max-width: 182px;
+    margin-bottom: 60px;
+    .links-page{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: $bl;
+    }
+    svg{
+        width: 12px;
+        height: 12px;
+        fill: $bl;
+        display: inline-block;
+        margin: 0 10px;
+    }
+}

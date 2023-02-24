@@ -1,0 +1,73 @@
+@@include('./htmlBlock/header.html')
+<section class="performances-del">
+    <div class="container">
+        <div class="link-page">
+            <a class="links-page" href="index.html">Главная</a>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use xlink:href="/img/sprite.svg#link-arrow"></use>
+            </svg>
+            <a class="links-page" href="performances-all.html">Спектакли</a>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use xlink:href="/img/sprite.svg#link-arrow"></use>
+            </svg>
+            <div class="links-page">У ковчега в восемь</div>
+        </div>
+
+        <div class="performances-del__block">
+            <div class="performances-del__block_wrapper">
+                <div class="performances-del__block_text">
+                    <h2 class="title-bl performances-del__title">У ковчега в восемь <span>6+</span></h2>
+                    <div class="performances-del__block_subtitle">Притча для детей и взрослых</div>
+                    <div class="performances-del__block_author">У. Хуб, перевод с нем. Е. Гороховская</div>
+
+                    <div class="performances-del__block_direct">Режиссёр–постановщик – Ольга Парфёнова</div>
+                    <div class="performances-del__block_direct">Художник–постановщик – Ксения Сорокина</div>
+                    <div class="performances-del__block_direct">Хореограф - Алексей Жандаров</div>
+                    <div class="performances-del__block_direct">Музыкальное оформление - Ольга Парфёнова</div>
+
+                    <div class="performances-del__block_time">Продолжительность спектакля: <span>1 час 15 минут без антракта</span></div>
+                </div>
+                
+                <div class="performances-del__block_img">
+                    <div class="poster__premier">Премьера</div>
+                    <img src="img/pages/performancesdet/perf-1.png" alt="У ковчега в восемь">
+                    <div class="performances-del__block_img_push">Доступно по «Пушкинской карте»</div>
+                </div>
+
+            </div>
+
+            <div class="performances-del__block_buy">
+                <div class="performances-del__block_date">25 Февр. СБ 19:00</div>
+
+                <div class="performances-del__block_rigth">
+                    <div class="performances-del__block_price">от 200 руб.</div>
+                    <button class="performances-del__block_btn">Купить билет</button>
+                </div>
+            </div>
+
+            <div class="performances-del__description">
+                Автор - немецкий драматург, артист, фантазёр и сказочник - Ульрих Хуб - сочинил удивительную историю про пингвинов, людей и наш суматошный мир.В нём так много всего наваливается друг на друга, что во всей этой куче мале, можно забыть что–то важное или потерять. Лучше – не терять и не теряться.Скажем по секрету, пингвины очень похожи на нас с вами, они играют, любят спорить, шутить, но жить друг без друга не могут. И когда перед ними встаёт выбор спастись или расстаться, они твёрдо решили: спастись и – не расстаться! Взаимовыручка, шутка и фантазия могут преодолеть любые океаны невзгод.Спектакль наполнен юмором, музыкой, захватывающим действием! Хорош для семейного просмотра.
+            </div>
+        </div>
+
+        <div class="performances-del__roll">
+            <h2 class="title-bl">В ролях</h2>
+            @@include('./htmlBlock/roll.html')
+        </div>
+
+        <div class="performances-del__video">
+            <h2 class="title-bl performances-del__video_title">Трейлер спектакля</h2>
+            <div class="performances-del__video_wrapper">
+                <video poster="img/video/poster.png" loop controls tabindex="0">
+                    <source src="img/video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                </video>
+            </div>
+        </div>
+
+        @@include('./htmlBlock/photo-gallerey.html')
+
+        
+    </div>
+</section>
+
+@@include('./htmlBlock/footer.html')

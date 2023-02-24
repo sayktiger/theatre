@@ -1,0 +1,173 @@
+.performances-del{
+    padding: 40px 0 120px 0;
+
+    &__block{
+        &_wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        &_text{
+            max-width: 460px;
+        }
+        &_subtitle{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            color: $bl;
+            margin-bottom: 40px;
+        }
+        &_author{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $bl;
+            margin-bottom: 20px;
+        }
+        &_direct{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $bl;
+        }
+        &_time{
+            margin-top: 20px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $bl;
+            span{
+                font-weight: 700;
+            }
+        }
+        &_img{
+            position: relative;
+            max-width: 560px;
+            img{
+                max-width: 560px;
+            }
+            &_push{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: $bl;
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+
+        &_buy{
+            margin-top: 40px;
+            margin-bottom: 50px;
+            display: flex;
+            padding: 25px 50px;
+            justify-content: space-between;
+            align-items: center;
+            background: $r;
+            border-radius: 10px;
+            min-height: 100px;
+        }
+        &_date{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            color: $wh;
+        }
+        &_rigth{
+            display: flex;
+            align-items: center;
+        }
+        &_price{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 23px;
+            color: $wh;
+            margin-right: 50px;
+        }
+        &_btn{
+            padding: 15px 90px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: $bl;
+            background: $wh;
+            border: 1px solid $wh;
+            border-radius: 30px;
+        }
+    }
+    &__description{
+        padding: 20px 40px;
+        margin-bottom: 120px;
+        border: 1px solid #703C3C;
+        border-radius: 10px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $bl;
+    }
+    &__title{
+        margin-bottom: 10px;
+    }
+    &__video{
+        margin-top: 120px;
+        &_wrapper{
+            width: 100%;
+            video{
+                
+                width: 100%;
+            }
+        }
+    }
+
+
+
+
+    &__roll{
+        position: relative;
+        .actors__wrapper{
+            max-width: 1400px;
+            overflow: hidden;
+        }
+        .swiper-button-prev{
+            left: -20px;
+            &::after{
+                display: none;
+            }
+            svg{
+                width: 11px;
+                height: 19px;
+            }
+        }
+        .swiper-button-next{
+            right: -20px;
+            &::after{
+                display: none;
+            }
+            svg{
+                width: 11px;
+                height: 19px;
+            }
+        }
+        .arrow_naw{
+            margin-top: 0;
+        }
+    }
+}

@@ -95,7 +95,19 @@ document.addEventListener(`DOMContentLoaded`, () => {
         slidesPerView: 1,
       });
 
-
+      const actorsDelSwiper = new Swiper('.actor-del-swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        spaceBetween: 40,
+        slidesPerView: 4,
+      });
 
       scrolling();
       pushCard();

@@ -2386,6 +2386,18 @@ document.addEventListener("DOMContentLoaded", function () {
     spaceBetween: 40,
     slidesPerView: 1
   });
+  var actorsDelSwiper = new Swiper('.actor-del-swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    spaceBetween: 40,
+    slidesPerView: 4
+  });
   Object(_modules_scrolling__WEBPACK_IMPORTED_MODULE_1__["default"])();
   Object(_modules_pushCart__WEBPACK_IMPORTED_MODULE_2__["default"])();
   Object(_modules_showCard__WEBPACK_IMPORTED_MODULE_3__["default"])(".poster__more-btn");

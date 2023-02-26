@@ -1,0 +1,101 @@
+.contact{
+    padding: 40px 0 120px 0;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text{
+        max-width: 640px;
+        width: 100%;
+    }
+    &__adress{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: $bl;
+        margin-bottom: 40px;
+    }
+    .line{
+        background-color: #703C3C;
+        width: 100%;
+        height: 1px;
+        margin-bottom: 40px;
+    }
+    &__phone_block{
+        display: flex;
+        align-items: flex-start;
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+        svg{
+            width: 16px;
+            height: 16px;
+            fill: $bl;
+        }
+    }
+    &__phone_tel{
+        margin-left: 10px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        color: $bl;
+        &:not(:last-child){
+            margin-bottom: 5px;
+        }
+        a{
+            font-weight: 400;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: $bl;
+
+        }
+    }
+    &__descr{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $bl;
+        margin-bottom: 40px;
+    }
+
+    &__admin{
+        display: flex;
+        align-items: center;
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+        svg{
+            width: 16px;
+            height: 16px;
+            fill: $bl;
+        }
+        &_text{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            color: $bl;
+            margin-left: 10px;
+            
+            a{
+                font-weight: 400;
+                color: $bl;
+                font-size: 16px;
+            }
+        }
+    }
+
+    &__img{
+        max-width: 680px;
+        width: 100%;
+    }
+}

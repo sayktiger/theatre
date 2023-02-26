@@ -18,6 +18,8 @@
         }
         .swiper-button-prev, .swiper-button-next{
             position: relative;
+            z-index: 10;
+            width: 44px;
             &::after{
                 display: none;
             }
@@ -26,6 +28,24 @@
                 height: 12px;
                 fill:#242424;
             }
+        }
+        .swiper-pagination-bullet{
+            user-select: none;
+            z-index: 1;
+            background-color: transparent;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: $bl;
+            left:25%;
+            &-active{
+                color: #330000;
+            }
+        }
+        .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
+            left: 25%;
         }
     }
 

@@ -1,0 +1,145 @@
+@media (max-width: 1400px) {
+    .container{
+        max-width: 1024px;
+    }
+    .contact{
+        &__text{
+            max-width: 450px;
+        }
+        &__img{
+            max-width: 450px;
+        }
+    }
+}
+
+@media (max-width:1025px) {
+    .container{
+        max-width: 810px;
+    }
+    .contact{
+        padding: 20px 0 100px 0;
+        .line{
+            margin-bottom: 30px;
+        }
+        &__text{
+            max-width: 390px;
+        }
+        &__img{
+            max-width: 390px;
+            img{
+                width: 390px;
+            }
+        }
+        &__adress{
+            margin-bottom: 30px;
+            font-size: 18px;
+            line-height: 21px;
+        }
+        &__phone_block{
+            svg{
+                margin-top: 2px;
+                width: 16px;
+                height: 16px;
+            }
+        }
+        &__phone_tel{
+            font-size: 16px;
+            line-height: 19px;
+        }
+        .contact__phone_block:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .container{
+        max-width: 630px;
+    }
+    .contact{
+        padding: 20px 0 80px 0;
+        &__wrapper{
+            flex-direction: column;
+        }
+        .links-page{
+            display: inline;
+        }
+        &__text{
+            max-width: 100%;
+            margin-bottom: 60px;
+        }
+        &__img{
+            display: none;
+        }
+        &__img-mobile{
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container{
+        max-width: 420px;
+    }
+    .contact{
+        padding: 15px 0 60px 0;
+        .title-bl{
+            margin-bottom: 30px;
+        }
+        &__phone_block:not(:last-child){
+            margin-bottom: 20px;
+        }
+        &__phone_block:nth-child(2){
+            margin-bottom: 30px;
+        }
+        &__img-mobile{
+            img{
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media (max-width:420px) {
+    .container{
+        max-width: 330px;
+        padding: 0 15px;
+    }
+    .contact{
+        padding: 10px 0 50px 0;
+        .title-bl{
+            margin-bottom: 20px;
+        }
+        &__text{
+            margin-bottom: 50px;
+        }
+        &__adress{
+            font-size: 16px;
+            line-height: 19px;
+        }
+        .contact__phone_tel{
+            font-size: 14px;
+            line-height: 16px;
+            margin-left:10px;
+        }
+        .contact__phone_tel a{
+            font-size: 14px;
+            line-height: 16px;
+        }
+        &__descr{
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 30px;
+        }
+        &__admin_text{
+            font-size: 14px;
+            line-height: 16px;
+            max-width:266px;
+        }
+        &__admin_text a{
+            font-size: 14px;
+            line-height: 16px
+        }
+    }
+}

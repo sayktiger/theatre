@@ -1,5 +1,6 @@
 //Библиотеки
 @import "libs/normalize";
+@import "libs/swiper-bundle.min";
 
 
 //Шрифты, переменные
@@ -22,11 +23,21 @@
 @import "page/about/about";
 @import "page/news/news";
 @import "page/performances/performances-all";
-@import "page/actorsdet/actordel";
-@import "page/performancesdet/performances-del";
-@import "page/newsdet/news-del";
+@import "page/actorsdel/actor-del";
+@import "page/performancesdel/performances-del";
+@import "page/newsdel/news-del";
 @import "page/contact/contact";
 
 
 @import "page/main/main-media";
 @import "blocks/media-header";
+@import "blocks/media-footer";
+
+@import "page/actors/actors-media";
+@import "page/about/about-media";
+@import "page/news/news-media";
+@import "page/performances/performances-all-media";
+@import "page/actorsdel/actor-del-media";
+@import "page/performancesdel/performancesdel-media";
+@import "page/newsdel/news-del-media";
+@import "page/contact/contact-media";

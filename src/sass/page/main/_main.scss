@@ -1,6 +1,9 @@
 .hero{
     padding: 40px 0 120px 0;
     overflow: hidden;
+    &__none{
+        display: none;
+    }
     .container{
         position: relative;
     }
@@ -9,6 +12,11 @@
         max-height: 550px;
         overflow: hidden;
         
+    }
+    &__hero{
+        img{
+            border-radius: 10px;
+        }
     }
     .swiper-button-prev{
         left: -20px;
@@ -208,7 +216,11 @@
     &__text{
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    .title-bl{
+        margin-bottom: 0;
     }
     &__wrapper{
         max-width: 1400px;
@@ -271,7 +283,11 @@
     &__text{
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    .title-bl{
+        margin-bottom: 0;
     }
     &__block{
         max-width: 248px;
@@ -399,5 +415,18 @@
             opacity: 0.7;
         }
     }
+}
+
+.mobile-usability{
+    display: none;
+}
+.mobile-menu__contact_usability{
+    display: none;
+}
+.about__show{
+    display: none;
+}
+.mobile-usability{
+    display: none;
 }
 

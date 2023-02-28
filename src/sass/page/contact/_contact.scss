@@ -1,5 +1,8 @@
 .contact{
     padding: 40px 0 120px 0;
+    &__img-mobile{
+        display: none;
+    }
     &__wrapper{
         display: flex;
         justify-content: space-between;

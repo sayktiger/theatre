@@ -1,0 +1,186 @@
+@media (max-width:1025px){
+    .footer{
+        &__wrapper{
+            flex-wrap: wrap;
+        }
+        &__partners{
+            max-width: 690px;
+            width: 100%;
+            margin-bottom: 60px;
+            &_img{
+                &:nth-child(-n+2){
+                    margin-bottom: 0;
+                }
+            }
+            &_wrapper{
+                max-width: 690px;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        &__menu{
+            max-width: 50%;
+        }
+        &__list{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 356px;
+        }
+        &__column{
+            width: 100%;
+            &:nth-child(1){
+                max-width: 111px;
+            }
+            &:nth-child(2){
+                max-width: 205px;
+            }
+        }
+        &__title{
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        &__item{
+            &:not(:last-child){
+                margin-bottom: 10px;
+            }
+        }
+        &__contacts{
+            margin-bottom: 60px;
+        }
+        
+    }
+
+}
+@media (max-width:768px) {
+    .footer{
+        &__column{
+            width: 100%;
+            &:nth-child(1){
+                max-width: 97px;
+            }
+            &:nth-child(2){
+                max-width: 130px;
+            }
+        }
+    }
+    .footer .footer__column:nth-child(2) {
+        margin-top: 0;
+    }
+}
+
+@media (max-width:576px) {
+    
+    .footer{
+        padding: 30px 0 20px 0;
+        &__menu{
+            max-width: 100%;
+            width: 100%;
+        }
+        .footer__list{
+            display: none;
+        }
+        .mobile-footer__list{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 50px;
+        }
+        .footer__column:nth-child(1){
+            max-width: 100%;
+        }
+        .footer__column:nth-child(2){
+            max-width: 100%;
+        }
+        &__contacts{
+            margin-bottom: 50px;
+        }
+        &__partners_img{
+            a{
+                width: 90px;
+                height: 36px;
+                img{
+                    width: 90px;
+                    height: 36px;
+                }
+            }
+        }
+        &__partners{
+            margin-bottom: 50px;
+        }
+        &__social{
+            margin-bottom: 50px;
+        }
+        &__social_icon{
+            svg{
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
+
+@media (max-width:450px) {
+    .container{
+        max-width: 330px;
+        padding: 0 15px;
+    }
+    .footer{
+        .mobile-footer__list{
+            display: none;
+        }
+        &__menu{
+            margin-bottom: 50px;
+            
+        }
+        .footer__list{
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer__column:nth-child(1) {
+            max-width: none;
+        }
+        .footer__column{
+            max-width: 130px !important;
+        }
+
+        &__item{
+            a{
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+        &__link{
+            line-height: 16px;
+            a{
+                line-height: 16px;
+            }
+        }
+        .footer__link:not(:last-child) {
+            margin-bottom: 8px;
+        }
+        .footer__partners_img{
+            a{
+                width: 140px;
+                height: 56px;
+                img{
+                    width: 140px;
+                    height: 56px;
+                }
+            }
+            &:nth-child(3){
+                margin-top: 20px;
+            }
+            &:nth-child(4){
+                margin-top: 20px;
+            }
+        }
+    }
+    
+}
+

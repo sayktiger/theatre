@@ -187,6 +187,7 @@
             font-size: 16px;
             line-height: 19px;
             color: $bl;
+            margin-bottom: 10px;
         }
         &_info{
             font-family: 'Roboto';
@@ -195,6 +196,9 @@
             font-size: 16px;
             line-height: 19px;
             color: $bl;
+            &:not(:last-child){
+                margin-bottom: 5px;
+            }
         }
         &_link{
             display: block;
@@ -224,5 +228,8 @@
         line-height: 19px;
         color: $bl;
         margin-bottom: 5px;
+    }
+    &__show{
+        display: none;
     }
 }
